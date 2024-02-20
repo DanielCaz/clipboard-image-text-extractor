@@ -1,0 +1,8 @@
+services:
+  server:
+    image: textract-image
+    container_name: textract-container
+    build:
+      context: .
+    ports:
+      - 8000:8000
