@@ -37,3 +37,7 @@ docker compose down
 ## Contributing
 
 Feel free to open an issue or a pull request if you have any ideas for improvements or new features.
+
+## Credits
+
+- Favicon: [Analyze](https://icons8.com/icon/7964/analyze) icon by [Icons8](https://icons8.com)
