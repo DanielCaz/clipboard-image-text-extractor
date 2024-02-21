@@ -22,18 +22,6 @@ docker compose -f docker-compose.dev.yaml up
 docker compose -f docker-compose.prod.yaml up
 ```
 
-## Building the app
-
-```bash
-docker compose -f docker-compose.prod.yaml build
-```
-
-## Stopping the app
-
-```bash
-docker compose down
-```
-
 ## Contributing
 
 Feel free to open an issue or a pull request if you have any ideas for improvements or new features.
