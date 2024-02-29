@@ -28,6 +28,9 @@ def result():
         if not text:
             return 'Bad Request: No text found in the image', 400
 
+        text = '\n'.join([line.strip()
+                         for line in text.split('\n') if line.strip()])
+
         return text, 200
     except UnidentifiedImageError:
         return 'Bad Request: The image is not supported', 400
