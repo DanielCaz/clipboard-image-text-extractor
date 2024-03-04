@@ -10,16 +10,16 @@ This is a simple flask app that uses pytesseract to extract text from an image f
 
 ## Running the app
 
-- Dev Mode (has a volume for the app code so you can make changes and see them reflected in the container without rebuilding the image)
+- Dev Mode
 
 ```bash
-docker compose -f docker-compose.dev.yaml up
+docker compose watch
 ```
 
 - Production Mode
 
 ```bash
-docker compose -f docker-compose.prod.yaml up
+docker compose up
 ```
 
 ## Contributing

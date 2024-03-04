@@ -6,3 +6,9 @@ services:
       context: .
     ports:
       - 8000:8000
+    develop:
+      watch:
+        - action: rebuild
+          path: ./src
+        - action: rebuild
+          path: ./requirements.txt
