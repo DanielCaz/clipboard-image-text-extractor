@@ -1,7 +1,7 @@
 services:
   server:
-    image: textract-image
-    container_name: textract-container
+    image: text-extract-image
+    container_name: text-extract-container
     build:
       context: .
     ports:
