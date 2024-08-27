@@ -27,6 +27,4 @@ USER appuser
 
 COPY --chown=appuser:appuser ./src ./src
 
-EXPOSE 8000
-
 CMD gunicorn -w 2 -b :8000 src.app:app
