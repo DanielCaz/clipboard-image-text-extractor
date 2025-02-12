@@ -2,6 +2,8 @@ const resultsP = document.querySelector("#results");
 const statusP = document.querySelector("#status");
 const copyBtn = document.querySelector("#copy");
 
+const originalBtnText = copyBtn.innerText;
+
 document.addEventListener("paste", (event) => {
   try {
     statusP.innerText = "Processing image...";
@@ -55,5 +57,12 @@ async function extractText(base64data) {
 }
 
 copyBtn.addEventListener("click", () => {
+  copyBtn.innerText = originalBtnText;
+
   navigator.clipboard.writeText(resultsP.innerText);
+
+  copyBtn.innerText = "Text copied!";
+  setTimeout(() => {
+    copyBtn.innerText = originalBtnText;
+  }, 3000);
 });
