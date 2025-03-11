@@ -1,6 +1,6 @@
 import io
 import base64
-import pytesseract
+import pytesseract  # type: ignore
 from PIL import Image, UnidentifiedImageError
 from flask import Flask, render_template, request
 
